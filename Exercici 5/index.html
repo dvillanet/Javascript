@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="mystyle.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Slab:wght@100;200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/203ae888f7.js" crossorigin="anonymous"></script>
+    <title>Nord Llibres</title>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light ">
+            <a class="navbar-brand" href="#"><img src="IMG/Logo2.png" width="60px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-warning"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+                <div class="cerca&categoria w-100 d-flex flex-column flex-md-row ml-md-4">
+                    <ul class="navbar-nav mr-2">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Totes les categories
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Novel·la</a>
+                                <a class="dropdown-item" href="#">Assaig</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Infantil</a>
+                            </div>
+                        </li>
+                    </ul>
+
+
+
+                    <div class="cercador w-100">
+                        <form class="form-inline" method="POST" action="" onsubmit="return validateSearch()"
+                            name="searchForm">
+                            <div class="input-group  w-100">
+                                <input type="search" class="form-control" name="inputSearch" id="inputSearch"
+                                    placeholder="Cerca per títol, autor, ISBN, o paraula clau" aria-label="Search">
+                                <span class="input-group-append">
+                                    <button class="btn btn-outline-warning border border-left-0" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+
+
+                <div class="login_carro w-50 d-flex justify-content-start justify-content-md-between">
+                    <div class="login ml-md-4 d-flex">
+                        <button class="btn btn-outline-warning flex-shrink-0 my-2 my-md-0" data-toggle="modal"
+                            data-target="#loginModal" type="submit">Iniciar
+                            sessió</button>
+
+                    </div>
+                    <div class="carret aling-justify-start ml-5">
+                        <button class="btn btn-outline-warning my-2 my-md-0 ml-4 ml-md-0" id="carret" type="submit"><i
+                                class="fas fa-shopping-cart text-warning d-block"></i></button>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </nav>
+
+
+
+    </header>
+
+    <!-- Contacta -->
+    <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-2 mt-5 pt-5 ">
+            <div class="col-md-4 col-lg-3 d-flex flex-column justify-content-between" id="colagenda">
+                <div class="contacta p-3">
+                    <p class="h5 text-warning">CONTACTA AMB NOSALTRES</p>
+                    <p class="h6"><a class="text-light" href="tel:600123456">900 10 10 10</a></p>
+                    <p class="h6"><a class="text-light" href="mailto:info@nordllibres.com">info@nordllibres.com</a></p>
+                </div>
+
+
+
+
+                <!-- Agenda -->
+                <section class="agenda">
+                    <p class="h3 pl-2 pr-2 pt-2">AGENDA</p>
+                    <article>
+                        <div>
+                            <div class="articledestacat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                                <div class="sectioninfo w-100">
+                                    <p class="h6 m-0 text-light">LECTURA DE CONTES</p>
+                                    <small class="text-light d-block">Dimarts 23 de Maig</small>
+                                </div>
+                                <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                    <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                    <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">19.00h</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                    <div>
+                        <div class="articledestacat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                            <div class="sectioninfo w-100">
+                                <p class="h6 m-0 text-light">CLUB DE LECTURA</p>
+                                <small class="text-light d-block">Dijous 25 de Maig</small>
+                            </div>
+                            <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">17.30h</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    </article>
+
+
+                </section>
+
+            </div>
+
+
+            <!-- destacat -->
+
+            <div class="col mt-2 mt-md-0 col-md-8 col-lg-9">
+                <div id="foto" class="container-fluid">
+                    <section class="destacat">
+                        <div class="row d-flex" id="coldestacat">
+                            <div
+                                class="col col-12 col-sm-6 col-lg-4 extracte p-0 pt-5 d-flex flex-column justify-content-between">
+                                <h3 class="text-light pl-3 pr-3 pb-0">Libre de la setmana</h3>
+                                <p class="blockquote text-light pl-3 pr-3">«Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit,
+                                    sed eiusmod tempor incidunt
+                                    ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam,
+                                    quis nostrud».</p>
+
+
+                                <article>
+                                    <div>
+                                        <div
+                                            class="articledestacat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                                            <div class="sectioninfo w-100">
+                                                <p class="h6 m-0 text-light">L'OMBRA DEL VENT</p>
+                                                <small class="text-light d-block">Carlos Ruíz Zafón</small>
+                                            </div>
+                                            <div
+                                                class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                                <small><a class="detall text-warning" href="">Segueix
+                                                        llegint»</a></small>
+                                                <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">8.20€</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </article>
+
+
+
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- Novetats -->
+
+    <div class="container-fluid pt-2">
+        <section>
+            <p class="h3 pl-2 pr-2 pt-4">NOVETATS</p>
+            <div class="row row-cols-1 row-cols-md-4">
+                <div class="col col-sm-6  col-md-4 col-lg-3 pt-3 pt-md-0">
+                    <article>
+                        <div class="detallNovetat">
+                            <img src="IMG/llibre_novetat.png" alt="llibre destacat" class="w-100">
+                            <div class="articlenovetat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                                <div class="sectioninfo w-100">
+                                    <p class="h6 m-0 text-light">MOLT SOROLL PER NO RES</p>
+                                    <small class="text-light d-block">William Shakespeare</small>
+                                </div>
+                                <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                    <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                    <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">8.20€</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+
+
+
+
+
+
+
+                <div class="col col-sm-6  col-md-4 col-lg-3 pt-3 pt-md-0">
+                    <article>
+                        <div class="detallNovetat">
+                            <img src="IMG/llibre_novetat2.png" alt="llibre destacat" class="w-100">
+                            <div class="articlenovetat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                                <div class="sectioninfo w-100">
+                                    <p class="h6 m-0 text-light">EL TOCADOR DE SEÑORAS</p>
+                                    <small class="text-light d-block">Eduardo Mendoza</small>
+                                </div>
+                                <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                    <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                    <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">9.90€</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+
+
+
+
+
+
+
+                <div class="col col-sm-6  col-md-4 col-lg-3 pt-3 pt-md-0">
+                    <article>
+                        <div class="detallNovetat">
+                            <img src="IMG/llibre_novetat3.png" alt="llibre destacat" class="w-100">
+                            <div class="articlenovetat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                                <div class="sectioninfo w-100">
+                                    <p class="h6 m-0 text-light">TEO VA A LA IT ACADEMY</p>
+                                    <small class="text-light d-block">Roal Dhal</small>
+                                </div>
+                                <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                    <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                    <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">9.90€</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <div class="col col-sm-6  col-md-4 col-lg-3 d-block d-md-none d-lg-block pt-3 pt-md-0">
+                    <article>
+                        <div class="detallNovetat">
+                            <img src="IMG/llibre_novetat4.png" alt="llibre destacat" class="w-100">
+                            <div class="articlenovetat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                                <div class="sectioninfo w-100">
+                                    <p class="h6 m-0 text-light">TEO ODIA CSS</p>
+                                    <small class="text-light d-block">David Villanueva</small>
+                                </div>
+                                <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                    <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                    <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">29.90€</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+    </div>
+    <!-- Recomentat per tu -->
+
+    <div class="container-fluid pt-2">
+        <section>
+            <p class="h3 pl-2 pr-2 pt-4">RECOMENAT PER TU</p>
+            <div class="row row-cols-1 row-cols-md-4">
+                <div class="col col-sm-6  col-md-4 col-lg-3 pt-3 pt-md-0">
+                    <article>
+                        <div class="detallNovetat">
+                            <img src="IMG/llibre_novetat5.png" alt="llibre destacat" class="w-100">
+                            <div class="articlenovetat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                                <div class="sectioninfo w-100">
+                                    <p class="h6 m-0 text-light">SIN NOTICIAS DE GURB</p>
+                                    <small class="text-light d-block">Eduardo Mendoza</small>
+                                </div>
+                                <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                    <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                    <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">19.90€</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+
+
+
+
+
+
+
+                <div class="col col-sm-6  col-md-4 col-lg-3 pt-3 pt-md-0">
+                    <article>
+                        <div class="detallNovetat">
+                            <img src="IMG/llibre_novetat6.png" alt="llibre destacat" class="w-100">
+                            <div class="articlenovetat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                                <div class="sectioninfo w-100">
+                                    <p class="h6 m-0 text-light">CSS PARA PARDILLOS</p>
+                                    <small class="text-light d-block">Albert Corral</small>
+                                </div>
+                                <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                    <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                    <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">89.90€</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+
+
+
+
+
+
+
+                <div class="col col-sm-6  col-md-4 col-lg-3 pt-3 pt-md-0">
+                    <article>
+                        <div class="detallNovetat">
+                            <img src="IMG/llibre_novetat7.png" alt="llibre destacat" class="w-100">
+                            <div class="articlenovetat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                                <div class="sectioninfo w-100">
+                                    <p class="h6 m-0 text-light">POMPONIO FLATO</p>
+                                    <small class="text-light d-block">Eduardo Mendoza</small>
+                                </div>
+                                <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                    <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                    <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">23.90€</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <div class="col col-sm-6  col-md-4 col-lg-3 d-block d-md-none d-lg-block pt-3 pt-md-0">
+                    <article>
+                        <div class="detallNovetat">
+                            <img src="IMG/llibre_novetat8.png" alt="llibre destacat" class="w-100">
+                            <div class="articlenovetat w-100 d-flex flex-column p-3 justify-content-between mt-1">
+                                <div class="sectioninfo w-100">
+                                    <p class="h6 m-0 text-light">TINTÍN AL CONGO</p>
+                                    <small class="text-light d-block">Herge</small>
+                                </div>
+                                <div class="pricetag d-flex pt-1 align-items-baseline justify-content-between">
+                                    <small><a class="detall text-warning" href="">Segueix llegint»</a></small>
+                                    <p class="pricetag h5 text-warning flex-shrink-1 m-0 p-0">9.90€</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+    </div>
+    <!-- Peu -->
+
+    <footer>
+        <div class="container-fluid mt-4">
+
+            <div class="row">
+
+
+                <section class="newsletter col-12 col-md-8 p-4 flex-column justify-content-center">
+                    <h5 class="text-light">Subscriu-te a la nostra newsletter</h5>
+                    <small class="text-light">Sigues el primer en assabentar-te de les nostres novetats</small>
+                    <form class="d-flex mt-3">
+                        <input type="search" class="form-control col-7" placeholder="Escriu el teu e-mail"
+                            aria-label="Search">
+                        <button class="btn btn-outline-warning ml-3" type="submit">Enviar</button>
+                    </form>
+
+
+                </section>
+                <section class="RRSS col-12 col-md-4 p-4 d-flex flex-column justify-content-center">
+                    <h5 class="text-light">Segueix-nos</h5>
+                    <small class="text-light">Connecta't a les nostres xarxes socials</small>
+                    <h1 class="logos">
+                        <a href="" class="text-warning"><i class="fa fa-instagram p-2" aria-hidden="true"></i></a>
+                        <a href="" class="text-warning"><i class="fa fa-facebook-square p-2" aria-hidden="true"></i></a>
+                        <a href="" class="text-warning"><i class="fa fa-twitter-square p-2" aria-hidden="true"></i></a>
+                    </h1>
+                </section>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Modal Login-->
+
+    <section class="login">
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="h3" aria-hidden="true">&times;</span>
+                        </button>
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="m-0">
+                                        <button class="btn btn-link p-0 text-dark titolplega" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            USUARI REGISTRAT
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <form class="needs-validation" novalidate method="POST"
+                                            onsubmit="return validateLogin()" name="loginForm">
+
+                                            <div class="form-row">
+
+                                                <div class="col-12 mb-3">
+                                                    <label for="validationCustom01">Usuari</label>
+                                                    <input type="text" class="form-control" id="loginUser"
+                                                        name="loginUser" placeholder="Escriu el teu mail" value=""
+                                                        required>
+                                                    <div class="valid-feedback">
+                                                        Te bona pitna!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        Revisa l'email.
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mb-3">
+                                                    <label for="validationCustom02">Contrasenya</label>
+                                                    <input type="password" class="form-control" id="password"
+                                                        placeholder="Contrasenya" value="" id="loginPass"
+                                                        name="loginPass" required>
+                                                    <div class="valid-feedback">
+                                                        Te bona pitna!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        Revisa la contrasenya
+                                                    </div>
+                                                    <div class="hint m-0 p-0">
+                                                        <a href="" class="text-dark"><small>Recordar
+                                                                contrasenya</small></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mb-5">
+                                                    <button type="submit" class="btn btn-warning">Iniciar
+                                                        sessió</button>
+
+                                                </div>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="m-0 p-0">
+                                        <button class="btn btn-link p-0 text-dark collapsed titolplega"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            DONAR-SE D'ALTA
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <form class="needs-validation" novalidate method="POST"
+                                            onsubmit="return validateLogin()" name="altaForm">
+
+                                            <div class="form-row align-items-end">
+
+                                                <div class="col-md-12 mb-3">
+                                                    <label for="validationCustom01">Usuari</label>
+                                                    <input type="text" class="form-control" id="altaUser"
+                                                        name="altaUser" placeholder="Escriu el teu mail" required>
+                                                    <div class="valid-feedback">
+                                                        Te bona pitna!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        Revisa l'email.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <label for="validationCustom02">Contrasenya</label>
+                                                    <input type="password" class="form-control" id="altaPass"
+                                                        placeholder="Contrasenya" value="" required>
+                                                    <div class="valid-feedback">
+                                                        Te bona pitna!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        La contrasenya ha de tenir més de 8 digits.
+                                                        I conternir una majúscula una minúscula i un número.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <label for="validationCustom02">Repetir Contrasenya</label>
+                                                    <input type="password" class="form-control" id="altaPass1"
+                                                        placeholder="Repetir Contrasenya" value="" required>
+                                                    <div class="valid-feedback">
+                                                        Te bona pitna!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        Les contrasenyes no coinciceixen.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="validationCustom02">Carrer/Via/Plaça</label>
+                                                    <input type="text" class="form-control" id="altaStreet"
+                                                        placeholder="Carrer">
+                                               
+                                                </div>
+                                                <div class="col-4 col-md-2 mb-3">
+                                                    <label for="validationCustom02">Número</label>
+                                                    <input type="text" class="form-control" id="altaNum"
+                                                        placeholder="Num" value="" required>
+                                                
+                                                </div>
+                                                <div class="col-4 col-md-2 mb-3">
+                                                    <label for="validationCustom02">Pis</label>
+                                                    <input type="text" class="form-control" id="altaFloor" placeholder="Pis"
+                                                        value="">
+                                                
+                                                </div>
+                                                <div class="col-4 col-md-2 mb-3">
+                                                    <label for="validationCustom02">Porta</label>
+                                                    <input type="text" class="form-control" id="altaDoor"
+                                                        placeholder="Porta" value="">
+                                                
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <label for="validationCustom02">Ciutat</label>
+                                                    <input type="text" class="form-control" id="altaCity"
+                                                        placeholder="Ciutat" value="" required>
+                                            
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <label for="validationCustom02">Codi postal</label>
+                                                    <input type="text" class="form-control" id="altaCP"
+                                                        placeholder="08224" value="" required>
+                            
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <label for="validationCustom02">Provincia</label>
+                                                    <select class="custom-select" id="provincia">
+                                                        <option value='alava'>-----</option>
+                                                        <option value='alava'>Álava</option>
+                                                        <option value='albacete'>Albacete</option>
+                                                        <option value='alicante'>Alicante/Alacant</option>
+                                                        <option value='almeria'>Almería</option>
+                                                        <option value='asturias'>Asturias</option>
+                                                        <option value='avila'>Ávila</option>
+                                                        <option value='badajoz'>Badajoz</option>
+                                                        <option value='barcelona'>Barcelona</option>
+                                                        <option value='burgos'>Burgos</option>
+                                                        <option value='caceres'>Cáceres</option>
+                                                        <option value='cadiz'>Cádiz</option>
+                                                        <option value='cantabria'>Cantabria</option>
+                                                        <option value='castellon'>Castellón/Castelló</option>
+                                                        <option value='ceuta'>Ceuta</option>
+                                                        <option value='ciudadreal'>Ciudad Real</option>
+                                                        <option value='cordoba'>Córdoba</option>
+                                                        <option value='cuenca'>Cuenca</option>
+                                                        <option value='girona'>Girona</option>
+                                                        <option value='laspalmas'>Las Palmas</option>
+                                                        <option value='granada'>Granada</option>
+                                                        <option value='guadalajara'>Guadalajara</option>
+                                                        <option value='guipuzcoa'>Guipúzcoa</option>
+                                                        <option value='huelva'>Huelva</option>
+                                                        <option value='huesca'>Huesca</option>
+                                                        <option value='illesbalears'>Illes Balears</option>
+                                                        <option value='jaen'>Jaén</option>
+                                                        <option value='acoruña'>A Coruña</option>
+                                                        <option value='larioja'>La Rioja</option>
+                                                        <option value='leon'>León</option>
+                                                        <option value='lleida'>Lleida</option>
+                                                        <option value='lugo'>Lugo</option>
+                                                        <option value='madrid'>Madrid</option>
+                                                        <option value='malaga'>Málaga</option>
+                                                        <option value='melilla'>Melilla</option>
+                                                        <option value='murcia'>Murcia</option>
+                                                        <option value='navarra'>Navarra</option>
+                                                        <option value='ourense'>Ourense</option>
+                                                        <option value='palencia'>Palencia</option>
+                                                        <option value='pontevedra'>Pontevedra</option>
+                                                        <option value='salamanca'>Salamanca</option>
+                                                        <option value='segovia'>Segovia</option>
+                                                        <option value='sevilla'>Sevilla</option>
+                                                        <option value='soria'>Soria</option>
+                                                        <option value='tarragona'>Tarragona</option>
+                                                        <option value='santacruztenerife'>Santa Cruz de Tenerife
+                                                        </option>
+                                                        <option value='teruel'>Teruel</option>
+                                                        <option value='toledo'>Toledo</option>
+                                                        <option value='valencia'>Valencia/Valéncia</option>
+                                                        <option value='valladolid'>Valladolid</option>
+                                                        <option value='vizcaya'>Vizcaya</option>
+                                                        <option value='zamora'>Zamora</option>
+                                                        <option value='zaragoza'>Zaragoza</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-12 mb-3">
+                                                    <button type="button" class="btn btn-warning">Donar-se
+                                                        d'alta</button>
+
+                                                </div>
+
+
+
+
+
+
+
+
+
+
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

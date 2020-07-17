@@ -1,0 +1,128 @@
+* {
+ /* box-sizing: border-box;*/
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.95rem;
+  border-radius: 0px;
+  
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+
+header{
+  background-color: rgba(0,0,0,0.85);
+}
+
+#carret{
+  height:38px;
+  width: 42px;
+}
+
+.contacta{
+  background-color:rgba(0, 0, 0, 0.85);
+}
+.contacta .h6{
+line-height: 0.7rem;
+}
+.contacta .h5{
+  font-family: 'Bree Serif', serif;
+  }
+.contacta .h1{
+    font-family: 'Bree Serif', serif;
+}
+
+article.agenda{
+  background-color: rgba(0,0,0,0.85);
+  line-height: 0.7rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6{
+  font-family: 'Bree Serif', serif;
+
+}
+
+#foto{
+  background-image: url(IMG/destacat.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.extracte{
+background-color:rgba(0, 0, 0, 0.3);
+}
+
+#colagenda{
+min-height: 310px;
+}
+#coldestacat{
+min-height: 330px;
+  }
+
+div.detallNovetat{
+    position: relative;
+}
+  
+div.articlenovetat{
+position: absolute;
+bottom:0px;
+left: 0px;
+background-color: rgba(0,0,0,0.85);
+line-height: 1.5rem;
+}
+
+.blockquote{
+  font-size: 1rem;
+}
+
+footer{
+background-color: rgba(0,0,0,0.85);
+
+}
+
+footer{
+  background-color: rgba(0,0,0,0.85);
+  
+  }
+
+.newsletter {
+  line-height: 0.7rem;
+}
+
+.pricetag {
+  line-height: 0.7rem;
+}
+
+.articledestacat{
+  background-color: rgba(0,0,0,0.85);
+}
+
+.logos i{
+  font-size: 2.5rem;
+}
+.modal-footer, .modal-header, .modal-body{
+  background-color:white;
+  border: 0;
+}
+
+.card-header{
+  background-color:white;
+  border: 0;
+
+}
+.card-body{
+  background-color:white;
+  border: 0;
+
+
+}
+.card{
+  background-color:white;
+  border: 0;
+
+}
+
+.titolplega{
+  font-family: 'Bree Serif', serif;
+
+}
